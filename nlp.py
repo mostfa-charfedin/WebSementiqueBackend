@@ -15,8 +15,11 @@ else:
 
 
 def normalize(text):
-    return "".join(c for c in unicodedata.normalize("NFD", text.lower())
-                   if unicodedata.category(c) != "Mn").replace("’", "'")
+    if text is None:
+        return ""
+    text = text.lower().replace("’", "'").replace("`", "'")
+    text = unicodedata.normalize("NFKD", text)
+    return "".join(ch for ch in text if not unicodedata.combining(ch)).encode("ascii", "ignore").decode("ascii")
 
 
 @lru_cache(maxsize=1)
@@ -29,10 +32,19 @@ def pipeline():
         "action:create": ["ajoute", "ajouter", "cree", "creer"],
         "action:update": ["modifie", "modifier", "mets a jour", "mettre a jour"],
         "action:delete": ["supprime", "supprimer", "efface", "effacer"],
+        "table:installations": ["installation", "installations", "centrale", "centrales", "site de production", "sites de production"],
+        "table:reserves": ["reserve", "reserves", "réserve", "réserves", "stockage", "stockages"],
         "table:reseaux": ["reseau", "reseaux"],
         "table:infrastructures": ["infrastructure", "infrastructures"],
     }
     aliases = {
+        "Installation": ["installation", "installations"],
+        "SourceProduction": ["source de production", "sources de production", "centrale solaire", "centrale photovoltaique", "eolienne"],
+        "SystemeStockage": ["systeme de stockage", "systemes de stockage", "batterie", "batteries", "stockage"],
+        "Reserve": ["reserve", "reserves", "réserve", "réserves"],
+        "ReserveExploitation": ["reserve d'exploitation", "réserve d'exploitation"],
+        "ReserveDePuissance": ["reserve de puissance", "réserve de puissance"],
+        "ReserveDeSecours": ["reserve de secours", "réserve de secours"],
         "ReseauElectrique": ["reseau electrique", "reseaux electriques"],
         "ReseauDistribution": ["reseau de distribution", "reseaux de distribution"],
         "ReseauTransport": ["reseau de transport", "reseaux de transport"],
