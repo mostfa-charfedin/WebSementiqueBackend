@@ -12,7 +12,14 @@ from rdflib import Literal, URIRef, XSD
 
 SCHEMA = json.loads(Path(__file__).with_name("ontology_schema.json").read_text(encoding="utf-8"))
 NAMESPACE = SCHEMA["namespace"]
-ROOTS = {"reseaux": ["Reseau"], "infrastructures": ["Ouvrage", "PosteCommande"]}
+ROOTS = {
+    "installations": ["Installation"],
+    "reserves": ["Reserve"],
+    "reseaux": ["Reseau"],
+    "infrastructures": ["Ouvrage", "PosteCommande"],
+    "lieux": ["Lieu"],
+    "transports": ["Transport"],
+}
 PREFIXES = f"""PREFIX eg: <{NAMESPACE}>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

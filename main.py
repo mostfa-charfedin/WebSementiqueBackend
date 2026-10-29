@@ -1,4 +1,4 @@
-"""API du module Gestion des réseaux et des infrastructures."""
+"""API du module Gestion de la production et du stockage."""
 import os
 from typing import Literal
 
@@ -15,7 +15,7 @@ else:
 
 # Variables de connexion : modifiables ici ou via l'environnement.
 FUSEKI_BASE_URL = os.getenv("FUSEKI_BASE_URL", "http://localhost:3030").rstrip("/")
-FUSEKI_DATASET = os.getenv("FUSEKI_DATASET", "smart-grid").strip("/")
+FUSEKI_DATASET = os.getenv("FUSEKI_DATASET", "Smart-Grid").strip("/")
 FUSEKI_ENDPOINT = os.getenv("FUSEKI_QUERY_URL", f"{FUSEKI_BASE_URL}/{FUSEKI_DATASET}/sparql")
 FUSEKI_UPDATE_ENDPOINT = os.getenv("FUSEKI_UPDATE_URL", f"{FUSEKI_BASE_URL}/{FUSEKI_DATASET}/update")
 FUSEKI_USERNAME = os.getenv("FUSEKI_USERNAME", "")
@@ -25,7 +25,7 @@ RDF_NAMESPACE = repository.NAMESPACE
 
 store = repository.Store(FUSEKI_ENDPOINT, FUSEKI_UPDATE_ENDPOINT,
                          FUSEKI_USERNAME, FUSEKI_PASSWORD, FUSEKI_TIMEOUT)
-app = FastAPI(title="Smart Grid Semantic API", version="2.0")
+app = FastAPI(title="Smart Grid Semantic API - Production & Storage", version="2.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:3000").split(","),
@@ -35,6 +35,7 @@ Collection = Literal["reseaux", "infrastructures"]
 # Module Gestion des acteurs et des organisations (/api/acteurs/*). À enregistrer avant les routes
 # génériques /api/{collection}/{id}, sinon « acteurs » serait lu comme une collection.
 app.include_router(acteurs_routes.build_router(store))
+Collection = Literal["installations", "reserves", "reseaux", "infrastructures", "lieux", "transports"]
 
 
 class Resource(BaseModel):
@@ -53,7 +54,7 @@ class Prompt(BaseModel):
 
 @app.get("/")
 def root():
-    return {"message": "Gestion des réseaux et des infrastructures", "docs": "/docs"}
+    return {"message": "Gestion de la production et du stockage", "docs": "/docs"}
 
 
 @app.get("/api/schema")
