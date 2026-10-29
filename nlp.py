@@ -67,8 +67,7 @@ def pipeline():
 
 
 def fail():
-    raise HTTPException(422, 'Demande non reconnue ou ambiguë. Exemple : Affiche les réseaux à Tunis ; '
-                        'Modifie le réseau id=reseau_test etatService="en service". Consultez le README.')
+    raise HTTPException(422, 'Demande non reconnue ou ambiguë. ')
 
 
 def translate(prompt):
