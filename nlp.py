@@ -36,6 +36,8 @@ def pipeline():
         "table:reserves": ["reserve", "reserves", "réserve", "réserves", "stockage", "stockages"],
         "table:reseaux": ["reseau", "reseaux"],
         "table:infrastructures": ["infrastructure", "infrastructures"],
+        "table:lieux": ["lieu", "lieux", "batiment", "batiments", "site", "sites", "emplacement", "emplacements"],
+        "table:transports": ["transport", "transports", "acheminement", "acheminements", "livraison", "livraisons"],
     }
     aliases = {
         "Installation": ["installation", "installations"],
@@ -56,6 +58,32 @@ def pipeline():
         "LigneBasseTension": ["ligne basse tension", "lignes basse tension"],
         "Transformateur": ["transformateur", "transformateurs"],
         "PosteCommande": ["poste", "postes", "poste de commande", "postes de commande"],
+        "Lieu": ["lieu", "lieux", "site", "sites"],
+        "Batiment": ["batiment", "batiments", "immeuble", "immeubles"],
+        "BatimentCommercial": ["batiment commercial", "batiments commerciaux"],
+        "BatimentIndustriel": ["batiment industriel", "batiments industriels"],
+        "BatimentResidentiel": ["batiment residentiel", "batiments residentiels"],
+        "CommerceAvecRecharge": ["commerce avec recharge"],
+        "AtelierAvecPilotageDeCharge": ["atelier avec pilotage", "atelier avec pilotage de charge"],
+        "ChampPhotovoltaique": ["champ photovoltaique", "champs photovoltaiques"],
+        "ParcEolienTerrestre": ["parc eolien", "parcs eoliens", "parc eolien terrestre"],
+        "SiteProduction": ["site de production", "sites de production"],
+        "SiteDistribution": ["site de distribution", "sites de distribution"],
+        "Transport": ["transport", "transports"],
+        "TransportElectricite": ["transport d'electricite", "transport electrique", "transports electriques"],
+        "TransportMaintenance": ["transport de maintenance", "transport maintenance"],
+        "TransportMateriel": ["transport de materiel", "transports de materiels", "transport materiel"],
+        "AcheminementHauteTension": ["acheminement haute tension"],
+        "Acheminement225kV": ["acheminement 225kv", "acheminement 225 kv"],
+        "Acheminement90kV": ["acheminement 90kv", "acheminement 90 kv"],
+        "AcheminementOutillage": ["acheminement outillage", "acheminement d'outillage"],
+        "AcheminementPiecesDeRechange": ["acheminement pieces de rechange", "acheminement de pieces de rechange"],
+        "LivraisonBatterie": ["livraison batterie", "livraison de batterie", "livraisons de batteries"],
+        "LivraisonTransformateur": ["livraison transformateur", "livraison de transformateur"],
+        "LivraisonEquipements": ["livraison equipement", "livraison equipements", "livraison d'equipements"],
+        "DistributionLocale": ["distribution locale"],
+        "Distribution30kV": ["distribution 30kv", "distribution 30 kv"],
+        "Distribution230V": ["distribution 230v", "distribution 230 v"],
     }
     for name in SCHEMA["classes"]:
         if any(ancestors(name).intersection(roots) for roots in ROOTS.values()):
@@ -135,6 +163,10 @@ def translate(prompt):
         "fiabilite": "niveauFiabilitePourcent", "longueur": "longueurKm",
         "tension d'entree": "tensionEntreeV", "tension de sortie": "tensionSortieV",
         "puissance nominale": "puissanceNominaleKVA", "rendement": "rendementPourcent",
+        "surface": "surfaceM2", "superficie": "surfaceM2",
+        "consommation": "consommationKWh",
+        "annee de construction": "anneeConstruction", "annee": "anneeConstruction",
+        "nombre d'etages": "nombreEtages", "nombre d'etage": "nombreEtages",
     }
     numeric_pattern = (r"(?:dont\s+)?(?:(?:la|le|une|un)\s+)?(" + "|".join(re.escape(k) for k in numeric_names)
                        + r")\s+(?:est\s+)?(superieur(?:e)? a|inferieur(?:e)? a|egal(?:e)? a|au moins|au plus)"

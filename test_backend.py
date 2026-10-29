@@ -59,20 +59,23 @@ class BackendTests(unittest.TestCase):
         self.assertFalse(r.json()["executed"])
 
     def test_crud_for_both_collections_through_nlp(self):
+        self.graph.add((EG.lieu_ref, RDF.type, EG.Batiment))
         for table, noun, kind, prop, value in [
             ("reseaux", "réseau", "ReseauDistribution", "tensionNominaleV", 30000),
             ("infrastructures", "transformateur", "Transformateur30kV400V", "tensionEntreeV", 30000),
+            ("lieux", "batiment", "Batiment", "localite", '"Tunis"'),
+            ("transports", "transport", "DistributionLocale", "dessertLieu", "lieu_ref"),
         ]:
-            text = f'Crée un {noun} id=nouveau type={kind} label="Exemple" {prop}={value}'
+            text = f'Crée un {noun} id=nouveau_{table} type={kind} label="Exemple" {prop}={value}'
             r = self.client.post("/api/nlp", json={"prompt": text})
             self.assertEqual(r.status_code, 200, r.text)
-            self.assertEqual(self.client.get(f"/api/{table}/nouveau").status_code, 200)
-            r = self.client.post("/api/nlp", json={"prompt": f'Modifie le {noun} id=nouveau etatService="hors service"'})
+            self.assertEqual(self.client.get(f"/api/{table}/nouveau_{table}").status_code, 200)
+            r = self.client.post("/api/nlp", json={"prompt": f'Modifie le {noun} id=nouveau_{table} label="Modifié"'})
             self.assertEqual(r.status_code, 200, r.text)
-            self.assertEqual(str(self.graph.value(EG.nouveau, EG.etatService)), "hors service")
-            r = self.client.post("/api/nlp", json={"prompt": f'Supprime le {noun} id=nouveau'})
+            self.assertEqual(str(self.graph.value(EG[f"nouveau_{table}"], RDFS.label)), "Modifié")
+            r = self.client.post("/api/nlp", json={"prompt": f'Supprime le {noun} id=nouveau_{table}'})
             self.assertEqual(r.status_code, 200, r.text)
-            self.assertEqual(self.client.get(f"/api/{table}/nouveau").status_code, 404)
+            self.assertEqual(self.client.get(f"/api/{table}/nouveau_{table}").status_code, 404)
 
     def test_rest_crud_relations_and_clear(self):
         r = self.client.post("/api/infrastructures", json={"id": "nouvelle_ligne", "type": "LigneElectrique",

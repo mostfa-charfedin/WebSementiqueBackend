@@ -17,6 +17,8 @@ ROOTS = {
     "reserves": ["Reserve"],
     "reseaux": ["Reseau"],
     "infrastructures": ["Ouvrage", "PosteCommande"],
+    "lieux": ["Lieu"],
+    "transports": ["Transport"],
 }
 PREFIXES = f"""PREFIX eg: <{NAMESPACE}>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
