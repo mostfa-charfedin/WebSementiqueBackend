@@ -1,0 +1,20 @@
+{
+  "triples": 3786,
+  "classes": 205,
+  "individuals": 121,
+  "object_properties": 128,
+  "datatype_properties": 53,
+  "undeclared_terms": [],
+  "invalid_literals": [],
+  "multiple_domains": [
+    {
+      "property": "energieProduiteKWh",
+      "domains": [
+        "CompteurIntelligent",
+        "SourceProduction"
+      ]
+    }
+  ],
+  "disjoint_conflicts_after_basic_inference": [],
+  "infrastructure_class_exists": false
+}

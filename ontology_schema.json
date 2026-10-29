@@ -1,0 +1,2219 @@
+{
+  "namespace": "https://example.org/energie-smart-grid#",
+  "classes": {
+    "Acheminement225kV": [
+      "AcheminementHauteTension"
+    ],
+    "Acheminement90kV": [
+      "AcheminementHauteTension"
+    ],
+    "AcheminementHauteTension": [
+      "TransportElectricite"
+    ],
+    "AcheminementOutillage": [
+      "TransportMaintenance"
+    ],
+    "AcheminementPiecesDeRechange": [
+      "TransportMaintenance"
+    ],
+    "AtelierAvecPilotageDeCharge": [
+      "BatimentIndustriel"
+    ],
+    "BaisseDeTension": [
+      "IncidentAlimentation"
+    ],
+    "Batiment": [
+      "Lieu"
+    ],
+    "BatimentCommercial": [
+      "Batiment"
+    ],
+    "BatimentIndustriel": [
+      "Batiment"
+    ],
+    "BatimentResidentiel": [
+      "Batiment"
+    ],
+    "BatterieDeSecoursAGM": [
+      "BatteriePlomb"
+    ],
+    "BatterieDeSecoursGel": [
+      "BatteriePlomb"
+    ],
+    "BatterieLithiumIon": [
+      "SystemeStockage"
+    ],
+    "BatteriePlomb": [
+      "SystemeStockage"
+    ],
+    "BatterieStationnaireLFP": [
+      "BatterieLithiumIon"
+    ],
+    "BatterieStationnaireNMC": [
+      "BatterieLithiumIon"
+    ],
+    "CableSouterrain30kV": [
+      "LigneMoyenneTension"
+    ],
+    "Capteur": [
+      "Equipement"
+    ],
+    "CapteurCourant": [
+      "Capteur"
+    ],
+    "CapteurCourantSurBatterie": [
+      "CapteurCourant"
+    ],
+    "CapteurCourantSurDepart": [
+      "CapteurCourant"
+    ],
+    "CapteurTemperature": [
+      "Capteur"
+    ],
+    "CapteurTension": [
+      "Capteur"
+    ],
+    "CapteurTensionDePhase": [
+      "CapteurTension"
+    ],
+    "CapteurTensionJeuDeBarres": [
+      "CapteurTension"
+    ],
+    "CentralePhotovoltaiqueAuSol": [
+      "SourceSolaire"
+    ],
+    "CentreConduiteTransport": [
+      "GestionnaireTransport"
+    ],
+    "CentreMaintenanceTransport": [
+      "GestionnaireTransport"
+    ],
+    "ChampPhotovoltaique": [
+      "SiteProduction"
+    ],
+    "ChauffeEauPilotable": [
+      "EquipementChauffage"
+    ],
+    "ClimatiseurPilotable": [
+      "EquipementClimatisation"
+    ],
+    "CommerceAvecRecharge": [
+      "BatimentCommercial"
+    ],
+    "CompteurAutoconsommation": [
+      "CompteurBidirectionnel"
+    ],
+    "CompteurBidirectionnel": [
+      "CompteurIntelligent"
+    ],
+    "CompteurCommercialTeleReleve": [
+      "CompteurTriphase"
+    ],
+    "CompteurIndustrielTeleReleve": [
+      "CompteurTriphase"
+    ],
+    "CompteurIntelligent": [
+      "Equipement"
+    ],
+    "CompteurMonophase": [
+      "CompteurIntelligent"
+    ],
+    "CompteurProducteurIndependant": [
+      "CompteurBidirectionnel"
+    ],
+    "CompteurResidentielPrepaiement": [
+      "CompteurMonophase"
+    ],
+    "CompteurResidentielTeleReleve": [
+      "CompteurMonophase"
+    ],
+    "CompteurTriphase": [
+      "CompteurIntelligent"
+    ],
+    "CoupureDeSecteur": [
+      "IncidentAlimentation"
+    ],
+    "DefautTransformateur": [
+      "IncidentMateriel"
+    ],
+    "DepartResidentiel230V": [
+      "LigneBasseTension"
+    ],
+    "DepartTriphasé400V": [
+      "LigneBasseTension"
+    ],
+    "Distribution230V": [
+      "DistributionLocale"
+    ],
+    "Distribution30kV": [
+      "DistributionLocale"
+    ],
+    "DistributionLocale": [
+      "TransportElectricite"
+    ],
+    "EclairageLEDAvecVariation": [
+      "EquipementEclairage"
+    ],
+    "EclairagePublicAvecVariation": [
+      "EquipementEclairage"
+    ],
+    "EmprisePosteRural": [
+      "SiteDistribution"
+    ],
+    "EmprisePosteUrbain": [
+      "SiteDistribution"
+    ],
+    "EntrepriseMaintenance": [
+      "Organisation"
+    ],
+    "EolienneTerrestreAvecStockage": [
+      "SourceEolienne"
+    ],
+    "EolienneTerrestreRaccordee": [
+      "SourceEolienne"
+    ],
+    "EquipeMaintenanceBatteries": [
+      "MaintenanceInstallations"
+    ],
+    "EquipeMaintenanceCablesSouterrains": [
+      "MaintenanceReseaux"
+    ],
+    "EquipeMaintenanceLignesAeriennes": [
+      "MaintenanceReseaux"
+    ],
+    "EquipeMaintenancePhotovoltaique": [
+      "MaintenanceInstallations"
+    ],
+    "Equipement": [
+      "Thing"
+    ],
+    "EquipementChauffage": [
+      "EquipementElectrique"
+    ],
+    "EquipementClimatisation": [
+      "EquipementElectrique"
+    ],
+    "EquipementEclairage": [
+      "EquipementElectrique"
+    ],
+    "EquipementElectrique": [
+      "Equipement"
+    ],
+    "ExploitantMicroReseauCampus": [
+      "OperateurReseauLocal"
+    ],
+    "ExploitantMicroReseauIndustriel": [
+      "OperateurReseauLocal"
+    ],
+    "GestionnaireDistribution": [
+      "GestionnaireReseau"
+    ],
+    "GestionnaireReseau": [
+      "Organisation"
+    ],
+    "GestionnaireTransport": [
+      "GestionnaireReseau"
+    ],
+    "GroupeDieselDeSecours": [
+      "SourceThermique"
+    ],
+    "ImmeubleAvecComptageCollectif": [
+      "BatimentResidentiel"
+    ],
+    "Incident": [
+      "Information"
+    ],
+    "IncidentAlimentation": [
+      "Incident"
+    ],
+    "IncidentMateriel": [
+      "Incident"
+    ],
+    "Information": [
+      "Thing"
+    ],
+    "Installation": [
+      "Thing"
+    ],
+    "Lieu": [
+      "Thing"
+    ],
+    "LigneAerienne225kV": [
+      "LigneHauteTension"
+    ],
+    "LigneAerienne30kV": [
+      "LigneMoyenneTension"
+    ],
+    "LigneAerienne90kV": [
+      "LigneHauteTension"
+    ],
+    "LigneBasseTension": [
+      "LigneElectrique"
+    ],
+    "LigneElectrique": [
+      "Ouvrage"
+    ],
+    "LigneHauteTension": [
+      "LigneElectrique"
+    ],
+    "LigneMoyenneTension": [
+      "LigneElectrique"
+    ],
+    "LivraisonBatterie": [
+      "LivraisonEquipements"
+    ],
+    "LivraisonEquipements": [
+      "TransportMateriel"
+    ],
+    "LivraisonTransformateur": [
+      "LivraisonEquipements"
+    ],
+    "MagasinAvecGestionEnergie": [
+      "BatimentCommercial"
+    ],
+    "MaintenanceInstallations": [
+      "EntrepriseMaintenance"
+    ],
+    "MaintenanceReseaux": [
+      "EntrepriseMaintenance"
+    ],
+    "Mesure": [
+      "Information"
+    ],
+    "MesureElectrique": [
+      "Mesure"
+    ],
+    "MesureStockage": [
+      "Mesure"
+    ],
+    "MicroReseau": [
+      "ReseauElectrique"
+    ],
+    "MicroReseauCampusSolaire": [
+      "MicroReseau"
+    ],
+    "MicroReseauIndustrielAvecStockage": [
+      "MicroReseau"
+    ],
+    "OccupantLogementCollectif": [
+      "UsagerResidentiel"
+    ],
+    "OccupantMaisonIndividuelle": [
+      "UsagerResidentiel"
+    ],
+    "OperateurReseauLocal": [
+      "GestionnaireReseau"
+    ],
+    "Organisation": [
+      "Thing"
+    ],
+    "Ouvrage": [
+      "Thing"
+    ],
+    "ParcEolienTerrestre": [
+      "SiteProduction"
+    ],
+    "Personne": [
+      "Thing"
+    ],
+    "PompeChaleurPilotable": [
+      "EquipementClimatisation"
+    ],
+    "PosteCommande": [
+      "Installation"
+    ],
+    "PosteProtection": [
+      "PosteCommande"
+    ],
+    "PosteProtectionDepart": [
+      "PosteProtection"
+    ],
+    "PosteProtectionTransformateur": [
+      "PosteProtection"
+    ],
+    "PosteSupervision": [
+      "PosteCommande"
+    ],
+    "PosteSupervisionDistribution": [
+      "PosteSupervision"
+    ],
+    "PosteSupervisionProduction": [
+      "PosteSupervision"
+    ],
+    "RadiateurAvecEffacement": [
+      "EquipementChauffage"
+    ],
+    "ReleveChargeBatterie": [
+      "MesureStockage"
+    ],
+    "ReleveCourantDeDepart": [
+      "MesureElectrique"
+    ],
+    "ReleveTemperatureBatterie": [
+      "MesureStockage"
+    ],
+    "ReleveTensionDePhase": [
+      "MesureElectrique"
+    ],
+    "Reseau": [
+      "Thing"
+    ],
+    "ReseauCommunication": [
+      "Reseau"
+    ],
+    "ReseauCompteursCourantPorteur": [
+      "ReseauTeleReleve"
+    ],
+    "ReseauCompteursRadio": [
+      "ReseauTeleReleve"
+    ],
+    "ReseauDistribution": [
+      "ReseauElectrique"
+    ],
+    "ReseauDistributionRural": [
+      "ReseauDistribution"
+    ],
+    "ReseauDistributionUrbain": [
+      "ReseauDistribution"
+    ],
+    "ReseauElectrique": [
+      "Reseau"
+    ],
+    "ReseauPostesFibreOptique": [
+      "ReseauSupervision"
+    ],
+    "ReseauPostesRadioPrivee": [
+      "ReseauSupervision"
+    ],
+    "ReseauSupervision": [
+      "ReseauCommunication"
+    ],
+    "ReseauTeleReleve": [
+      "ReseauCommunication"
+    ],
+    "ReseauTransport": [
+      "ReseauElectrique"
+    ],
+    "ReseauTransportInterRegional": [
+      "ReseauTransport"
+    ],
+    "ReseauTransportRegional": [
+      "ReseauTransport"
+    ],
+    "Reserve": [
+      "Thing"
+    ],
+    "ReserveDePuissance": [
+      "ReserveExploitation"
+    ],
+    "ReserveDeSecours": [
+      "ReserveExploitation"
+    ],
+    "ReserveExploitation": [
+      "Reserve"
+    ],
+    "ReserveHydrogeneEnCavité": [
+      "StockageHydrogene"
+    ],
+    "ReserveHydrogeneSousPression": [
+      "StockageHydrogene"
+    ],
+    "ReserveRapideBatterie": [
+      "ReserveDePuissance"
+    ],
+    "ReserveSecoursBatimentPublic": [
+      "ReserveDeSecours"
+    ],
+    "ReserveSecoursSiteIndustriel": [
+      "ReserveDeSecours"
+    ],
+    "ReserveTournanteThermique": [
+      "ReserveDePuissance"
+    ],
+    "ResidenceAvecAutoconsommation": [
+      "BatimentResidentiel"
+    ],
+    "ResponsableDistribution": [
+      "ResponsableExploitation"
+    ],
+    "ResponsableExploitation": [
+      "Personne"
+    ],
+    "ResponsableProduction": [
+      "ResponsableExploitation"
+    ],
+    "ResponsableSecteurRural": [
+      "ResponsableDistribution"
+    ],
+    "ResponsableSecteurUrbain": [
+      "ResponsableDistribution"
+    ],
+    "ResponsableSiteEolien": [
+      "ResponsableProduction"
+    ],
+    "ResponsableSiteSolaire": [
+      "ResponsableProduction"
+    ],
+    "ServiceDistributionRural": [
+      "GestionnaireDistribution"
+    ],
+    "ServiceDistributionUrbain": [
+      "GestionnaireDistribution"
+    ],
+    "SiteDistribution": [
+      "SiteExterieur"
+    ],
+    "SiteExterieur": [
+      "Lieu"
+    ],
+    "SiteProduction": [
+      "SiteExterieur"
+    ],
+    "SondeTemperatureLocalElectrique": [
+      "CapteurTemperature"
+    ],
+    "SondeTemperatureTransformateur": [
+      "CapteurTemperature"
+    ],
+    "SourceEolienne": [
+      "SourceProduction"
+    ],
+    "SourceProduction": [
+      "Installation"
+    ],
+    "SourceSolaire": [
+      "SourceProduction"
+    ],
+    "SourceThermique": [
+      "SourceProduction"
+    ],
+    "StockageHydrogene": [
+      "SystemeStockage"
+    ],
+    "SurchauffeBatterie": [
+      "IncidentMateriel"
+    ],
+    "SystemeStockage": [
+      "Reserve"
+    ],
+    "Technicien": [
+      "Personne"
+    ],
+    "TechnicienCapteurs": [
+      "TechnicienMesure"
+    ],
+    "TechnicienCompteurs": [
+      "TechnicienMesure"
+    ],
+    "TechnicienLignesElectriques": [
+      "TechnicienMaintenance"
+    ],
+    "TechnicienMaintenance": [
+      "Technicien"
+    ],
+    "TechnicienMesure": [
+      "Technicien"
+    ],
+    "TechnicienTransformateurs": [
+      "TechnicienMaintenance"
+    ],
+    "ToiturePhotovoltaiqueRaccordee": [
+      "SourceSolaire"
+    ],
+    "Transformateur": [
+      "Ouvrage"
+    ],
+    "Transformateur30kV400V": [
+      "TransformateurAbaisseur"
+    ],
+    "Transformateur90kV30kV": [
+      "TransformateurAbaisseur"
+    ],
+    "TransformateurAbaisseur": [
+      "Transformateur"
+    ],
+    "TransformateurDistribution": [
+      "Transformateur"
+    ],
+    "TransformateurDistributionAvecMesure": [
+      "TransformateurDistribution"
+    ],
+    "TransformateurDistributionSurPoteau": [
+      "TransformateurDistribution"
+    ],
+    "TransformateurElevateur": [
+      "Transformateur"
+    ],
+    "TransformateurProduction225kV": [
+      "TransformateurElevateur"
+    ],
+    "TransformateurProduction90kV": [
+      "TransformateurElevateur"
+    ],
+    "Transport": [
+      "Thing"
+    ],
+    "TransportElectricite": [
+      "Transport"
+    ],
+    "TransportMaintenance": [
+      "TransportMateriel"
+    ],
+    "TransportMateriel": [
+      "Transport"
+    ],
+    "TurbineGazCycleCombine": [
+      "SourceThermique"
+    ],
+    "UsagerAtelier": [
+      "UsagerProfessionnel"
+    ],
+    "UsagerCommerce": [
+      "UsagerProfessionnel"
+    ],
+    "UsagerProfessionnel": [
+      "Utilisateur"
+    ],
+    "UsagerResidentiel": [
+      "Utilisateur"
+    ],
+    "UsineAvecAutoproduction": [
+      "BatimentIndustriel"
+    ],
+    "Utilisateur": [
+      "Personne"
+    ]
+  },
+  "properties": {
+    "anneeConstruction": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "integer"
+      ]
+    },
+    "anneeCreation": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "GestionnaireReseau"
+      ],
+      "ranges": [
+        "integer"
+      ]
+    },
+    "capaciteKWh": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "chargePourcent": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "consommationJournaliereKWh": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "EquipementElectrique"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "consommationKWh": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "courantA": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "CapteurCourant"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "courantMaxA": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "LigneElectrique"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "coutProductionKWh": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "dateMiseEnService": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Thing"
+      ],
+      "ranges": [
+        "dateTime"
+      ]
+    },
+    "dateReleve": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Equipement"
+      ],
+      "ranges": [
+        "dateTime"
+      ]
+    },
+    "dureeUtilisationHeures": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "EquipementElectrique"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "energieConsommeeKWh": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "energieInjecteeKWh": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "energieProduiteKWh": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "CompteurIntelligent",
+        "SourceProduction"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "energieSoutireeKWh": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "estRenouvelable": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "boolean"
+      ]
+    },
+    "etatChargePourcent": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "etatFonctionnement": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "EquipementElectrique"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "etatService": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Thing"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "facteurChargePourcent": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "frequenceHz": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "LigneElectrique"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "frequenceNominaleHz": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "grandeurSurveillee": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "identifiantPersonne": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Personne"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "intervalleMesureMin": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "integer"
+      ]
+    },
+    "localite": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Lieu"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "longueurKm": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "LigneElectrique"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "niveauFiabilitePourcent": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "nomComplet": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Personne"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "nomGestionnaire": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "GestionnaireReseau"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "nombreEtages": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "integer"
+      ]
+    },
+    "numeroSerie": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "pertesEnergieKWh": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Transformateur"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "precisionMesure": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "puissanceChargeKW": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "puissanceDechargeKW": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "puissanceEquipementKW": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "EquipementElectrique"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "puissanceKW": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "puissanceNominaleKVA": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Transformateur"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "referenceExploitation": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Thing"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "rendementPourcent": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Transformateur"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "surfaceM2": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "telephoneContact": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "GestionnaireReseau"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "temperatureC": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "CapteurTemperature"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "tensionEntreeV": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Transformateur"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "tensionMesureeV": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "CapteurTension"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "tensionNominaleV": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "tensionSortieV": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Transformateur"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "tensionV": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "LigneElectrique"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "typeEnergie": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "uniteMesure": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "string"
+      ]
+    },
+    "valeurMesuree": {
+      "kind": "DatatypeProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "decimal"
+      ]
+    },
+    "aPourResponsable": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "ResponsableExploitation"
+      ]
+    },
+    "aPourResponsableIncident": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Incident"
+      ],
+      "ranges": [
+        "ResponsableExploitation"
+      ]
+    },
+    "accueilleCapteur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "Capteur"
+      ]
+    },
+    "accueilleInstallation": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Lieu"
+      ],
+      "ranges": [
+        "Installation"
+      ]
+    },
+    "accueilleProduction": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "SourceProduction"
+      ]
+    },
+    "achemineEquipement": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "TransportMateriel"
+      ],
+      "ranges": [
+        "Equipement"
+      ]
+    },
+    "affecteReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Incident"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "alimente": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "LigneElectrique"
+      ],
+      "ranges": [
+        "Batiment"
+      ]
+    },
+    "alimenteEquipement": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "EquipementElectrique"
+      ]
+    },
+    "alimenteLigne": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Transformateur"
+      ],
+      "ranges": [
+        "LigneElectrique"
+      ]
+    },
+    "alimenteStockage": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "SystemeStockage"
+      ]
+    },
+    "appartientAuReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "LigneElectrique"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "assureMaintenance": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "EntrepriseMaintenance"
+      ],
+      "ranges": [
+        "Ouvrage"
+      ]
+    },
+    "collaboreAvec": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Organisation"
+      ],
+      "ranges": [
+        "Organisation"
+      ]
+    },
+    "communiqueVia": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Equipement"
+      ],
+      "ranges": [
+        "ReseauCommunication"
+      ]
+    },
+    "connecteEquipement": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauCommunication"
+      ],
+      "ranges": [
+        "Equipement"
+      ]
+    },
+    "consulteCompteur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Personne"
+      ],
+      "ranges": [
+        "CompteurIntelligent"
+      ]
+    },
+    "contientEquipement": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "EquipementElectrique"
+      ]
+    },
+    "decritEquipement": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Information"
+      ],
+      "ranges": [
+        "Equipement"
+      ]
+    },
+    "dessertBatiment": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "Batiment"
+      ]
+    },
+    "dessertLieu": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Transport"
+      ],
+      "ranges": [
+        "Lieu"
+      ]
+    },
+    "dessertReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "TransportElectricite"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "disposeDeComptage": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "CompteurIntelligent"
+      ]
+    },
+    "disposeDePosteCommande": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "PosteCommande"
+      ]
+    },
+    "disposeDeReserve": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "SystemeStockage"
+      ]
+    },
+    "disposeDeReserveExploitation": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "ReserveExploitation"
+      ]
+    },
+    "disposeDeStockage": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "SystemeStockage"
+      ]
+    },
+    "echangeAvecCapteur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "Capteur"
+      ]
+    },
+    "echangeAvecCompteur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "CompteurIntelligent"
+      ]
+    },
+    "emploiePersonne": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Organisation"
+      ],
+      "ranges": [
+        "Personne"
+      ]
+    },
+    "enregistreMesure": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "Mesure"
+      ]
+    },
+    "entretientTransformateur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "GestionnaireReseau"
+      ],
+      "ranges": [
+        "Transformateur"
+      ]
+    },
+    "estAcheminePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Equipement"
+      ],
+      "ranges": [
+        "TransportMateriel"
+      ]
+    },
+    "estAlimentePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "LigneElectrique"
+      ]
+    },
+    "estAlimenteeParTransformateur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "LigneElectrique"
+      ],
+      "ranges": [
+        "Transformateur"
+      ]
+    },
+    "estCapteurDuSite": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "Batiment"
+      ]
+    },
+    "estCompteurDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "Batiment"
+      ]
+    },
+    "estCompteurDuReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "estConnecteA": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "estConnecteDirectementA": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "estConsultePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "Personne"
+      ]
+    },
+    "estDecritParInformation": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Equipement"
+      ],
+      "ranges": [
+        "Information"
+      ]
+    },
+    "estDesserviParReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "estDesserviParTransport": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Lieu"
+      ],
+      "ranges": [
+        "Transport"
+      ]
+    },
+    "estDesserviParTransportElectrique": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "TransportElectricite"
+      ]
+    },
+    "estEnregistreeParCompteur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Mesure"
+      ],
+      "ranges": [
+        "CompteurIntelligent"
+      ]
+    },
+    "estEntretenuPar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Transformateur"
+      ],
+      "ranges": [
+        "GestionnaireReseau"
+      ]
+    },
+    "estGerePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "GestionnaireReseau"
+      ]
+    },
+    "estInjectionMesureePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "CompteurIntelligent"
+      ]
+    },
+    "estInstalleDans": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "EquipementElectrique"
+      ],
+      "ranges": [
+        "Batiment"
+      ]
+    },
+    "estInstalleSur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "Batiment"
+      ]
+    },
+    "estIntegreeAuReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "estLieuIncident": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Lieu"
+      ],
+      "ranges": [
+        "Incident"
+      ]
+    },
+    "estLigneSurveilleePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "LigneElectrique"
+      ],
+      "ranges": [
+        "Capteur"
+      ]
+    },
+    "estLocaliseDans": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Incident"
+      ],
+      "ranges": [
+        "Lieu"
+      ]
+    },
+    "estMaintenuPar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Equipement"
+      ],
+      "ranges": [
+        "Technicien"
+      ]
+    },
+    "estMaintenuParEntreprise": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Ouvrage"
+      ],
+      "ranges": [
+        "EntrepriseMaintenance"
+      ]
+    },
+    "estMesurePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "CompteurIntelligent"
+      ]
+    },
+    "estOccupePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "Utilisateur"
+      ]
+    },
+    "estOrganisePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Transport"
+      ],
+      "ranges": [
+        "Organisation"
+      ]
+    },
+    "estPilotePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "EquipementElectrique"
+      ],
+      "ranges": [
+        "GestionnaireReseau"
+      ]
+    },
+    "estPosteCommandeDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "PosteCommande"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "estPrisEnChargePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Incident"
+      ],
+      "ranges": [
+        "Technicien"
+      ]
+    },
+    "estProductionSuperviseePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "GestionnaireReseau"
+      ]
+    },
+    "estProductionSurveilleePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "Capteur"
+      ]
+    },
+    "estProduiteParCapteur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Mesure"
+      ],
+      "ranges": [
+        "Capteur"
+      ]
+    },
+    "estRaccordeeParLigne": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "LigneElectrique"
+      ]
+    },
+    "estRelieAuReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "estReservePourReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReserveExploitation"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "estResponsableDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ResponsableExploitation"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "estResponsableIncidentDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ResponsableExploitation"
+      ],
+      "ranges": [
+        "Incident"
+      ]
+    },
+    "estSignalePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Incident"
+      ],
+      "ranges": [
+        "Personne"
+      ]
+    },
+    "estSitueDans": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Installation"
+      ],
+      "ranges": [
+        "Lieu"
+      ]
+    },
+    "estStockageDuSite": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "Batiment"
+      ]
+    },
+    "estStockagePilotePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "GestionnaireReseau"
+      ]
+    },
+    "estStockageRaccordePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "LigneElectrique"
+      ]
+    },
+    "estStockageSurveillePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "Capteur"
+      ]
+    },
+    "estSuperviseeParPoste": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Installation"
+      ],
+      "ranges": [
+        "PosteCommande"
+      ]
+    },
+    "estSurveillePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "EquipementElectrique"
+      ],
+      "ranges": [
+        "Capteur"
+      ]
+    },
+    "estTransformateurDuReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Transformateur"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "estTransformateurSurveillePar": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Transformateur"
+      ],
+      "ranges": [
+        "Capteur"
+      ]
+    },
+    "faitPartieDeReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "fournitEnergieAuStockage": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "SystemeStockage"
+      ]
+    },
+    "gere": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "GestionnaireReseau"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "injecteElectriciteDans": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SourceProduction"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "integreSource": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "SourceProduction"
+      ]
+    },
+    "intervientSur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Technicien"
+      ],
+      "ranges": [
+        "Ouvrage"
+      ]
+    },
+    "maintientEquipement": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Technicien"
+      ],
+      "ranges": [
+        "Equipement"
+      ]
+    },
+    "mesureConsommationDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "Batiment"
+      ]
+    },
+    "mesureInjectionDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "SourceProduction"
+      ]
+    },
+    "mobiliseTechnicien": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "TransportMateriel"
+      ],
+      "ranges": [
+        "Technicien"
+      ]
+    },
+    "occupeBatiment": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Utilisateur"
+      ],
+      "ranges": [
+        "Batiment"
+      ]
+    },
+    "organiseTransport": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Organisation"
+      ],
+      "ranges": [
+        "Transport"
+      ]
+    },
+    "participeAuTransport": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Technicien"
+      ],
+      "ranges": [
+        "TransportMateriel"
+      ]
+    },
+    "piloteEquipement": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "GestionnaireReseau"
+      ],
+      "ranges": [
+        "EquipementElectrique"
+      ]
+    },
+    "piloteStockage": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "GestionnaireReseau"
+      ],
+      "ranges": [
+        "SystemeStockage"
+      ]
+    },
+    "possedeCompteur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Batiment"
+      ],
+      "ranges": [
+        "CompteurIntelligent"
+      ]
+    },
+    "possedeLigne": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "LigneElectrique"
+      ]
+    },
+    "possedeTransformateur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "Transformateur"
+      ]
+    },
+    "prendEnChargeIncident": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Technicien"
+      ],
+      "ranges": [
+        "Incident"
+      ]
+    },
+    "produitMesure": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "Mesure"
+      ]
+    },
+    "raccordeStockage": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "LigneElectrique"
+      ],
+      "ranges": [
+        "SystemeStockage"
+      ]
+    },
+    "recoitAlimentationDuReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "EquipementElectrique"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "recoitDonneesDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "GestionnaireReseau"
+      ],
+      "ranges": [
+        "CompteurIntelligent"
+      ]
+    },
+    "recoitEnergieDeProduction": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "SourceProduction"
+      ]
+    },
+    "recoitEnergieStockee": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "SystemeStockage"
+      ]
+    },
+    "recoitInjectionDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "SourceProduction"
+      ]
+    },
+    "recoitInterventionDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Ouvrage"
+      ],
+      "ranges": [
+        "Technicien"
+      ]
+    },
+    "recoitMesuresDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "GestionnaireReseau"
+      ],
+      "ranges": [
+        "Capteur"
+      ]
+    },
+    "regroupeReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "relieProduction": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "LigneElectrique"
+      ],
+      "ranges": [
+        "SourceProduction"
+      ]
+    },
+    "restitueAuReseau": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "ReseauElectrique"
+      ]
+    },
+    "sertAuTransport": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Ouvrage"
+      ],
+      "ranges": [
+        "TransportElectricite"
+      ]
+    },
+    "signaleIncident": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Personne"
+      ],
+      "ranges": [
+        "Incident"
+      ]
+    },
+    "stockeEnergieIssueDe": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "SystemeStockage"
+      ],
+      "ranges": [
+        "SourceProduction"
+      ]
+    },
+    "subitIncident": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "ReseauElectrique"
+      ],
+      "ranges": [
+        "Incident"
+      ]
+    },
+    "superviseProduction": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "GestionnaireReseau"
+      ],
+      "ranges": [
+        "SourceProduction"
+      ]
+    },
+    "surveille": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Equipement"
+      ],
+      "ranges": [
+        "Ouvrage"
+      ]
+    },
+    "surveilleEquipement": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "EquipementElectrique"
+      ]
+    },
+    "surveilleInstallation": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "PosteCommande"
+      ],
+      "ranges": [
+        "Installation"
+      ]
+    },
+    "surveilleLigne": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "LigneElectrique"
+      ]
+    },
+    "surveilleProduction": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "SourceProduction"
+      ]
+    },
+    "surveilleStockage": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "SystemeStockage"
+      ]
+    },
+    "surveilleTransformateur": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "Transformateur"
+      ]
+    },
+    "transmetDonneesA": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "CompteurIntelligent"
+      ],
+      "ranges": [
+        "GestionnaireReseau"
+      ]
+    },
+    "transmetMesuresA": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Capteur"
+      ],
+      "ranges": [
+        "GestionnaireReseau"
+      ]
+    },
+    "travaillePour": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "Personne"
+      ],
+      "ranges": [
+        "Organisation"
+      ]
+    },
+    "utiliseOuvrage": {
+      "kind": "ObjectProperty",
+      "domains": [
+        "TransportElectricite"
+      ],
+      "ranges": [
+        "Ouvrage"
+      ]
+    }
+  }
+}
