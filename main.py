@@ -1,4 +1,4 @@
-"""API du module Gestion des réseaux et des infrastructures."""
+"""API du module Gestion de la production et du stockage."""
 import os
 from typing import Literal
 
@@ -24,13 +24,13 @@ RDF_NAMESPACE = repository.NAMESPACE
 
 store = repository.Store(FUSEKI_ENDPOINT, FUSEKI_UPDATE_ENDPOINT,
                          FUSEKI_USERNAME, FUSEKI_PASSWORD, FUSEKI_TIMEOUT)
-app = FastAPI(title="Smart Grid Semantic API", version="2.0")
+app = FastAPI(title="Smart Grid Semantic API - Production & Storage", version="2.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:3000").split(","),
     allow_methods=["GET", "POST", "PATCH", "DELETE"], allow_headers=["Content-Type"],
 )
-Collection = Literal["reseaux", "infrastructures"]
+Collection = Literal["installations", "reserves", "reseaux", "infrastructures"]
 
 
 class Resource(BaseModel):
@@ -49,7 +49,7 @@ class Prompt(BaseModel):
 
 @app.get("/")
 def root():
-    return {"message": "Gestion des réseaux et des infrastructures", "docs": "/docs"}
+    return {"message": "Gestion de la production et du stockage", "docs": "/docs"}
 
 
 @app.get("/api/schema")
