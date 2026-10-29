@@ -13,6 +13,8 @@ from rdflib import Literal, URIRef, XSD
 SCHEMA = json.loads(Path(__file__).with_name("ontology_schema.json").read_text(encoding="utf-8"))
 NAMESPACE = SCHEMA["namespace"]
 ROOTS = {
+    "equipements": ["Equipement"],
+    "informations": ["Information"],
     "installations": ["Installation"],
     "reserves": ["Reserve"],
     "reseaux": ["Reseau"],

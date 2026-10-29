@@ -28,6 +28,8 @@ def pipeline():
     language = spacy.blank("fr")
     matcher = PhraseMatcher(language.vocab, attr="LOWER")
     phrases = {
+        "table:equipements": ["equipement", "equipements"],
+        "table:informations": ["information", "informations"],
         "action:read": ["affiche", "afficher", "liste", "lister", "montre", "montrer", "cherche", "chercher", "trouve", "donne"],
         "action:create": ["ajoute", "ajouter", "cree", "creer"],
         "action:update": ["modifie", "modifier", "mets a jour", "mettre a jour"],
@@ -40,6 +42,20 @@ def pipeline():
         "table:transports": ["transport", "transports", "acheminement", "acheminements", "livraison", "livraisons"],
     }
     aliases = {
+        "Equipement": ["equipement", "equipements"],
+        "Information": ["information", "informations"],
+        "Capteur": ["capteur", "capteurs"],
+        "CapteurCourant": ["capteur de courant", "capteurs de courant"],
+        "CapteurTension": ["capteur de tension", "capteurs de tension"],
+        "CapteurTemperature": ["capteur de temperature", "capteurs de temperature"],
+        "CompteurIntelligent": ["compteur", "compteurs", "compteur intelligent", "compteurs intelligents"],
+        "EquipementElectrique": ["equipement electrique", "equipements electriques"],
+        "Mesure": ["mesure", "mesures"],
+        "MesureElectrique": ["mesure electrique", "mesures electriques"],
+        "MesureStockage": ["mesure de stockage", "mesures de stockage"],
+        "Incident": ["incident", "incidents"],
+        "IncidentMateriel": ["incident materiel", "incidents materiels"],
+        "IncidentAlimentation": ["incident d'alimentation", "incidents d'alimentation"],
         "Installation": ["installation", "installations"],
         "SourceProduction": ["source de production", "sources de production", "centrale solaire", "centrale photovoltaique", "eolienne"],
         "SystemeStockage": ["systeme de stockage", "systemes de stockage", "batterie", "batteries", "stockage"],
