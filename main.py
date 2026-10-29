@@ -7,10 +7,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, ConfigDict, Field
 
 if __package__:
-    from . import repository, nlp
+    from . import repository, nlp, acteurs_routes
 else:
     import repository
     import nlp
+    import acteurs_routes
 
 # Variables de connexion : modifiables ici ou via l'environnement.
 FUSEKI_BASE_URL = os.getenv("FUSEKI_BASE_URL", "http://localhost:3030").rstrip("/")
@@ -31,6 +32,9 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PATCH", "DELETE"], allow_headers=["Content-Type"],
 )
 Collection = Literal["reseaux", "infrastructures"]
+# Module Gestion des acteurs et des organisations (/api/acteurs/*). À enregistrer avant les routes
+# génériques /api/{collection}/{id}, sinon « acteurs » serait lu comme une collection.
+app.include_router(acteurs_routes.build_router(store))
 
 
 class Resource(BaseModel):
