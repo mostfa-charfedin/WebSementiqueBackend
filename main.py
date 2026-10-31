@@ -16,7 +16,7 @@ else:
 
 # Variables de connexion : modifiables ici ou via l'environnement.
 FUSEKI_BASE_URL = os.getenv("FUSEKI_BASE_URL", "http://localhost:3030").rstrip("/")
-FUSEKI_DATASET = os.getenv("FUSEKI_DATASET", "Smart-Grid").strip("/")
+FUSEKI_DATASET = os.getenv("FUSEKI_DATASET", "smart-grid").strip("/")
 FUSEKI_ENDPOINT = os.getenv("FUSEKI_QUERY_URL", f"{FUSEKI_BASE_URL}/{FUSEKI_DATASET}/sparql")
 FUSEKI_UPDATE_ENDPOINT = os.getenv("FUSEKI_UPDATE_URL", f"{FUSEKI_BASE_URL}/{FUSEKI_DATASET}/update")
 FUSEKI_USERNAME = os.getenv("FUSEKI_USERNAME", "")
