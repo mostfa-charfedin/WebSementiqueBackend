@@ -2,6 +2,10 @@
 
 FastAPI reçoit une demande, spaCy détecte l'intention et les entités, Python construit une requête SPARQL validée puis l'envoie à Fuseki. Aucun changement frontend.
 
+## Architecture
+
+![Architecture du backend](ARCHITECTURE.png)
+
 ## Démarrage
 
 Dans le dossier `WebSementiqueBackend` (PowerShell) :
